@@ -57,6 +57,9 @@ section {
 /* =================================== */
 .btn {
     border-radius: 0;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
 }
 
 
@@ -106,4 +109,96 @@ section {
 .about-content {
     background: rgba(0,0,0,.6);
     padding: 30px;
+}
+
+/* =================================== */
+/*    Pricing section    */
+/* =================================== */
+.pricing-table {
+    -webkit-box-shadow: 8px 8px 0 #999;
+    box-shadow: 8px 8px 0 #999;
+    position: relative;
+    top: 20px;
+    margin: 20px 0;
+}
+.pricing-table.pricing-featured {
+    top: 0;
+}
+.pricing-table.pricing-featured .pricing-header {
+    padding: 40px 0;
+    background: #333;
+    color: #fff;
+}
+.pricing-table.pricing-featured .pricing-header span {
+    color: #fff;
+}
+.pricing-header {
+    background: #efefef;
+    padding: 20px 0;
+    color: #999;
+}
+.pricing-header span {
+    font-size: 3em;
+    color: #000;
+}
+.pricing-body {
+    padding: 20px 0;
+    border-left: 1px #efefef solid;
+    border-right: 1px #efefef solid;
+}
+.pricing-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.pricing-list li {
+    margin: 7px 0;
+}
+.pricing-list li:before {
+    content: "\f375";
+    font-family: Ionicons;
+    color: #999;
+    margin: 0 10px;
+}
+.btn-pricing {
+    background: #efefef;
+}
+.btn-pricing:hover,
+.btn-pricing:active,
+.btn-pricing:focus {
+    background: #333;
+    color: #fff;
+}
+/* =================================== */
+/*    Testimonials section    */
+/* =================================== */
+#testimonials {
+    background-image: url("../images/bg-testimonials.jpg");
+    background-position: center bottom;
+}
+/* =================================== */
+/*    Blog section    */
+/* =================================== */
+.blog-post {
+    background: #efefef;
+    overflow: hidden;
+}
+.blog-img {
+    max-width: 200px;
+    float: left;
+}
+.blog-post-content {
+    overflow: hidden;
+    padding: 20px;
+}
+.btn-more {
+    color: #333;
+    padding: 5px 20px;
+    border: 1px #333 solid;
+}
+.btn-more:hover,
+.btn-more:active,
+.btn-more:focus {
+    background: #333;
+    color: #fff;
 }
