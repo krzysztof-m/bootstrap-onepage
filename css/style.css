@@ -48,7 +48,9 @@ h3 {
     margin-left: 10px;
 }
 
-
+.section-lead {
+    margin-bottom: 30px;
+}
 section {
     padding: 50px 0;
 }
@@ -61,7 +63,10 @@ section {
     -o-transition: all .2s linear;
     transition: all .2s linear;
 }
-
+.control-label {
+    color: #fff;
+    text-shadow:  2px 2px 2px #333;
+}
 
 /* =================================== */
 /*    Intro section    */
@@ -175,6 +180,26 @@ section {
 #testimonials {
     background-image: url("../images/bg-testimonials.jpg");
     background-position: center bottom;
+    color: #fff;
+}
+.testimonials-content {
+    padding: 50px;
+    background: rgba(0,0,0,.3);
+}
+.icon-testimonial {
+    font-size: 50px;
+}
+.testimonial {
+    font-size: 17px;
+    line-height: 25px;
+}
+.author {
+    font-size: 1.5em;
+}
+.author .company-name {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    color: #999;
 }
 /* =================================== */
 /*    Blog section    */
@@ -200,5 +225,26 @@ section {
 .btn-more:active,
 .btn-more:focus {
     background: #333;
+    color: #fff;
+}
+/* =================================== */
+/*    Contact section    */
+/* =================================== */
+#contact {
+    background-image: url("../images/bg-contact.jpg");
+    background-position: center 30%;
+}
+#contact .section-lead {
+
+}
+.btn-submit {
+    
+}
+/* =================================== */
+/*    Footer    */
+/* =================================== */
+footer {
+    padding: 10px;
+    background: #161616;
     color: #fff;
 }
