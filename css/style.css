@@ -54,6 +54,13 @@ h3 {
 section {
     padding: 50px 0;
 }
+#intro,
+#about,
+#testimonials,
+#contact {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 /* =================================== */
 /*    Bootstrap overrides    */
 /* =================================== */
@@ -243,7 +250,7 @@ section {
 /* =================================== */
 /*    Footer    */
 /* =================================== */
-footer {
+#footer {
     padding: 10px;
     background: #161616;
     color: #fff;
