@@ -28,12 +28,6 @@ h3 {
     font-size: 30px;
     line-height: 35px;
 }
-
-.btn-light {
-    border: 2px #fff solid;
-    color: #fff;
-    background: rgba(0,0,0,.5);
-}
 .section-title:after,
 .section-title-left:after {
     content: "";
@@ -74,6 +68,17 @@ section {
     color: #fff;
     text-shadow:  2px 2px 2px #333;
 }
+.form-control {
+    background-color: rgba(0,0,0,.6);
+    border-radius: 0;
+    color: #fff;
+}
+.form-control:focus {
+    border-color: rgba(256,256,256,.8);
+}
+.control-label {
+    font-weight: 300;
+}
 
 /* =================================== */
 /*    Intro section    */
@@ -88,6 +93,17 @@ section {
 #intro h1,
 #intro p {
     color: #fff;
+}
+.btn-intro {
+    border: 2px #fff solid;
+    color: #fff;
+    background: rgba(0,0,0,.5);
+}
+.btn-intro:hover,
+.btn-intro:focus,
+.btn-intro:active {
+    background: #fff;
+    color: #333;
 }
 /* =================================== */
 /*    Services section    */
@@ -189,6 +205,11 @@ section {
     background-position: center bottom;
     color: #fff;
 }
+#testimonials .section-title,
+#testimonials .section-lead {
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
 .testimonials-content {
     padding: 50px;
     background: rgba(0,0,0,.3);
@@ -241,11 +262,23 @@ section {
     background-image: url("../images/bg-contact.jpg");
     background-position: center 30%;
 }
+#contact .section-title,
 #contact .section-lead {
-
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 .btn-submit {
-    
+    display: block;
+    padding: 10px 50px;
+    margin: 0 auto;
+    background: rgba(0,0,0,.8);
+    color: #fff;
+}
+.btn-submit:hover,
+.btn-submit:active,
+.btn-submit:focus {
+    background: #fff;
+    color: #333;
 }
 /* =================================== */
 /*    Footer    */
@@ -254,4 +287,7 @@ section {
     padding: 10px;
     background: #161616;
     color: #fff;
+}
+#footer a {
+    color: #9a9a9a;
 }
