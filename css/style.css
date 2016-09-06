@@ -6,6 +6,7 @@
 
 body {
     font-family: "Lato", sans-serif;
+    position: relative;
 }
 
 h1,
@@ -58,6 +59,10 @@ section {
 /* =================================== */
 /*    Bootstrap overrides    */
 /* =================================== */
+.navbar-default {
+    transition: all .3s linear;
+}
+
 .btn {
     border-radius: 0;
     -webkit-transition: all .2s linear;
@@ -79,7 +84,33 @@ section {
 .control-label {
     font-weight: 300;
 }
-
+/* =================================== */
+/*    Intro section    */
+/* =================================== */
+.navbar-intro {
+    background-color: transparent;
+    border: none;
+    transition: all .3s linear;
+}
+.navbar-intro .navbar-nav > li > a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+}
+.navbar-intro .navbar-nav > li > a:hover,
+.navbar-intro .navbar-nav > li > a:active,
+.navbar-intro .navbar-nav > li > a:focus {
+    color: #afafaf;
+}
+.navbar-intro .navbar-nav > .active > a {
+    background-color: transparent;
+    border-bottom: 1px #afafaf solid;
+    color: #afafaf;
+}
+.navbar-intro .navbar-brand {
+    color: #fff;
+}
 /* =================================== */
 /*    Intro section    */
 /* =================================== */
