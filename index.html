@@ -64,13 +64,13 @@
             <p class="section-lead text-center">Cras nec nulla erat. Donec laoreet nec lorem ac molestie. Morbi non malesuada elit. Mauris volutpat.</p>
             <!-- /.section-lead -->
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 md-margin-bottom-40">
                     <i class="icon ion-home icon-services"></i>
                     <p class="service-desc">Quisque nec nisl dictum, sollicitudin lacus vitae, rhoncus ex. Donec velit orci, sollicitudin quis accumsan ut, tempor ut urna. Curabitur rhoncus elementum diam in venenatis. Ut aliquet enim quis sed. </p>
                     <!-- /.service-desc -->
                 </div>
                 <!-- /.col-md-4 -->
-                <div class="col-md-4">
+                <div class="col-md-4 md-margin-bottom-40">
                     <i class="icon ion-search icon-services"></i>
                     <p class="service-desc">Quisque nec nisl dictum, sollicitudin lacus vitae, rhoncus ex. Donec velit orci, sollicitudin quis accumsan ut, tempor ut urna. Curabitur rhoncus elementum diam in venenatis. Ut aliquet enim quis sed. </p>
                     <!-- /.service-desc -->
@@ -85,13 +85,13 @@
             </div>
             <!-- /.row -->
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 md-margin-bottom-40">
                     <i class="icon ion-map icon-services"></i>
                     <p class="service-desc">Quisque nec nisl dictum, sollicitudin lacus vitae, rhoncus ex. Donec velit orci, sollicitudin quis accumsan ut, tempor ut urna. Curabitur rhoncus elementum diam in venenatis. Ut aliquet enim quis sed. </p>
                     <!-- /.service-desc -->
                 </div>
                 <!-- /.col-md-4 -->
-                <div class="col-md-4">
+                <div class="col-md-4 md-margin-bottom-40">
                     <i class="icon ion-compass icon-services"></i>
                     <p class="service-desc">Quisque nec nisl dictum, sollicitudin lacus vitae, rhoncus ex. Donec velit orci, sollicitudin quis accumsan ut, tempor ut urna. Curabitur rhoncus elementum diam in venenatis. Ut aliquet enim quis sed. </p>
                     <!-- /.service-desc -->
@@ -135,7 +135,7 @@
             <h2 class="text-center section-title">Pricing</h2>
             <p class="section-lead text-center">Cras nec nulla erat. Donec laoreet nec lorem ac molestie. Morbi non malesuada elit. Mauris volutpat.</p>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 md-margin-bottom-30">
                     <div class="pricing-table text-center">
                         <header class="pricing-header">
                             <h4>Basic license</h4>
@@ -160,7 +160,7 @@
                     <!-- /.pricing-table -->
                 </div>
                 <!-- /.col-md-4 -->
-                <div class="col-md-4">
+                <div class="col-md-4 md-margin-bottom-30">
                     <div class="pricing-table pricing-featured text-center">
                         <header class="pricing-header">
                             <h4>Standard license</h4>
@@ -247,7 +247,7 @@
             <h2 class="text-center section-title">Blog</h2>
             <p class="section-lead text-center">Cras nec nulla erat. Donec laoreet nec lorem ac molestie. Morbi non malesuada elit. Mauris volutpat.</p>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 md-margin-bottom-30">
                     <div class="blog-post">
                         <img class="blog-img" src="images/blog1.jpg" alt="">
                         <div class="blog-post-content">
@@ -336,12 +336,16 @@
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/jquery.stellar.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
     <script>
     $(document).ready(function() {
         $('body').scrollspy({ target: '#main-navbar' });
         $.stellar({
             horizontalScrolling: false,
             verticalOffset: 300
+        });
+        $('a').smoothScroll({
+            speed: 1000
         });
         var $mainNavbar = $('#main-navbar');
         var $intro = $('#intro');

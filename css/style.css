@@ -178,13 +178,11 @@ section {
     box-shadow: 8px 8px 0 #999;
     position: relative;
     top: 20px;
-    margin: 20px 0;
+    margin: 20px auto;
+    max-width: 370px;
 }
-.pricing-table.pricing-featured {
-    top: 0;
-}
+
 .pricing-table.pricing-featured .pricing-header {
-    padding: 40px 0;
     background: #333;
     color: #fff;
 }
@@ -321,4 +319,44 @@ section {
 }
 #footer a {
     color: #9a9a9a;
+}
+/* =================================== */
+/*    Media queries    */
+/* =================================== */
+@media (min-width: 992px) {
+    .pricing-table.pricing-featured {
+        top: 0;
+    }
+    .pricing-table.pricing-featured .pricing-header {
+        padding: 40px 0;
+    }
+}
+@media (max-width: 991px) {
+    .md-margin-bottom-30 {
+        margin-bottom: 30px;
+    }
+    .md-margin-bottom-40 {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 500px) {
+    body {
+        font-size: 13px;
+    }
+    .testimonial {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .testimonials-content {
+        padding: 25px;
+    }
+    .blog-img {
+        margin-left: -120px;
+    }
+    
+}
+@media (max-width: 400px) {
+    .blog-post-content {
+        padding: 10px;
+    }
 }
