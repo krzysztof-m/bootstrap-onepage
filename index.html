@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Landing page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lte IE 8]><script src="js/ie/html5shiv.min.js"></script><![endif]-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/ionicons.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -337,6 +340,8 @@
     <script src="js/jquery.stellar.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/jquery.smooth-scroll.min.js"></script>
+    <!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
+    <!--[if !IE]>-->
     <script>
     $(document).ready(function() {
         $('body').scrollspy({ target: '#main-navbar' });
@@ -361,5 +366,6 @@
         });
     });
     </script>
+    <!--<![endif]-->
 </body>
 </html>
